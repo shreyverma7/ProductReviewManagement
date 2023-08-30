@@ -181,7 +181,8 @@ internal class Program
         Operation operation = new Operation();
         // operation.RetrieveTopRecords(list); 
         // operation.RetrieveAllRecordsWithCondition(list);
-        operation.UsingGroupBy(list);
+        // operation.UsingGroupBy(list);
+        operation.RetreiveProductIdAndReview(list);
 
 
 
