@@ -183,7 +183,9 @@ internal class Program
         // operation.RetrieveAllRecordsWithCondition(list);
         // operation.UsingGroupBy(list);
        // operation.RetreiveProductIdAndReview(list);
-       operation.SkipTopRecords(list);
+       //operation.SkipTopRecords(list);
+         operation.RetreiveProductIdAndReview(list);
+
 
 
 
