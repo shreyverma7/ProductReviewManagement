@@ -184,7 +184,8 @@ internal class Program
         // operation.UsingGroupBy(list);
        // operation.RetreiveProductIdAndReview(list);
        //operation.SkipTopRecords(list);
-         operation.RetreiveProductIdAndReview(list);
+         //operation.RetreiveProductIdAndReview(list);
+         operation.AddDataToDataTable(list);
 
 
 

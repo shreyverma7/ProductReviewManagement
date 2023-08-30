@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -68,7 +69,28 @@ namespace ProductReviewManagement
                 Console.WriteLine(data.ProductId + "    " + data.Review);
             }
         }
-
-
+        //UC8
+        DataTable table = new DataTable();
+        public void AddDataToDataTable(List<Product> list) 
+        {
+            table.Columns.Add("ProductId").DataType = typeof(int);
+            table.Columns.Add("UserId").DataType = typeof(int);
+            table.Columns.Add("Rating").DataType = typeof(int);
+            table.Columns.Add("Review").DataType = typeof(string);
+            table.Columns.Add("IsLike").DataType = typeof(bool);
+            foreach(var data in list)
+            {
+                table.Rows.Add(data.ProductID,data.UserID,data.Rating,data.Review,data.isLike);
+            }
+            foreach(var item in table.AsEnumerable())
+            {
+                Console.WriteLine(item.Field<int>("ProductId"));
+                Console.WriteLine(item.Field<int>("UserID"));
+                Console.WriteLine(item.Field<int>("Rating"));
+                Console.WriteLine(item.Field<string>("Review"));
+                Console.WriteLine(item.Field<bool>("IsLike"));
+                Console.WriteLine("::::::::::::::::::::::::::::::");
+            }
+        }
     }
 }
