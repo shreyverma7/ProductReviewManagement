@@ -179,8 +179,9 @@ internal class Program
 
         //UC1
         Operation operation = new Operation();
-       // operation.RetrieveTopRecords(list); 
-       operation.RetrieveAllRecordsWithCondition(list);
+        // operation.RetrieveTopRecords(list); 
+        // operation.RetrieveAllRecordsWithCondition(list);
+        operation.UsingGroupBy(list);
 
 
 
