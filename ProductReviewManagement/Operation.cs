@@ -53,6 +53,13 @@ namespace ProductReviewManagement
                 Console.WriteLine(data.ProductId +"    "+ data.Review);
             }
         }
+        //UC6
+        public void SkipTopRecords(List<Product> list)
+        {
+            var result = list.Skip(5);
+            Display(result.ToList());
+        }
+
 
     }
 }
