@@ -176,5 +176,11 @@ internal class Program
             isLike = true,
         });
 
+
+        //UC1
+        Operation operation = new Operation();
+        operation.RetrieveTopRecords(list); 
+
+
     }
 }
