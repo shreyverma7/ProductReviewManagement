@@ -101,5 +101,12 @@ namespace ProductReviewManagement
                 Console.WriteLine(item.Field<int>("ProductId"));
             }
         }
+        //UC10
+        public void AvgRating(List<Product> list)
+        {
+            var result = list.Average(x => x.Rating);
+            Console.WriteLine(result);
+        }
+
     }
 }
