@@ -188,7 +188,8 @@ internal class Program
         // operation.AddDataToDataTable(list);
          //operation.RetreiveRecordsFromDataTable();
         // operation.AvgRating(list);
-         operation.RetriveUsingReview(list);
+        // operation.RetriveUsingReview(list);
+         operation.RetriveUsingRating(list);
 
 
 
