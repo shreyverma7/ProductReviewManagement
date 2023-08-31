@@ -186,6 +186,7 @@ internal class Program
        //operation.SkipTopRecords(list);
          //operation.RetreiveProductIdAndReview(list);
          operation.AddDataToDataTable(list);
+         operation.RetreiveRecordsFromDataTable();
 
 
 

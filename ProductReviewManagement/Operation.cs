@@ -92,5 +92,14 @@ namespace ProductReviewManagement
                 Console.WriteLine("::::::::::::::::::::::::::::::");
             }
         }
+        //UC9
+        public void RetreiveRecordsFromDataTable()
+        {
+            var result = table.AsEnumerable().Where(x => x.Field<bool>("IsLike").Equals(true));
+            foreach(var item in result.AsEnumerable())
+            {
+                Console.WriteLine(item.Field<int>("ProductId"));
+            }
+        }
     }
 }
